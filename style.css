@@ -1,0 +1,205 @@
+body {
+  position: relative;
+}
+
+header {
+  position: relative;
+  background-color: white;
+  height: 20vh;
+  min-height: 18rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .typing {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+/* Media Query for devices withi coarse pointers and no hover functionality */
+
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url("asset/hello_world.mp4") white no-repeat center center
+      scroll;
+  }
+
+  header video {
+    display: none;
+  }
+}
+
+.parallax {
+  /* The image used */
+  background: url("asset/my-pic.jpg") top left/ cover no-repeat;
+
+  /* Full height */
+  min-height: 550px;
+  opacity: 0.65;
+
+  position: relative;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+}
+
+.caption {
+  position: absolute;
+  left: 15%;
+  top: 40%;
+  width: 70%;
+}
+
+.browser-container {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+/* Container for columns and the top "toolbar" */
+.browser-row {
+  background: #f1f1f1;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+}
+
+.left {
+  width: 15%;
+}
+
+.right {
+  width: 10%;
+}
+
+.middle {
+  width: 75%;
+}
+
+/* Clear floats after the columns */
+.browser-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Three dots */
+.dot {
+  margin-top: 4px;
+  height: 12px;
+  width: 12px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.browser-content {
+  background-color: rgba(153, 236, 255, 0.7);
+}
+
+.portfolio-container {
+  color: #777;
+}
+
+.card {
+  border: none;
+}
+
+.portfolio-container {
+  margin: 4rem 0;
+}
+
+.portfolio-title {
+  margin-bottom: 2rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: all 0.5s ease;
+}
+
+.card-container:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.button {
+  position: absolute;
+  width: 200px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.button a {
+  width: 200px;
+  padding: 12px 12px;
+  text-align: center;
+  color: white;
+  border: solid 2px white;
+  z-index: 1;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.button a:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.card-container:hover .button {
+  opacity: 1;
+}
+
+.card-container {
+  position: relative;
+}
+
+.navbar .nav-link {
+  border-bottom: solid 1px white;
+}
+
+.navbar .nav-link:hover {
+  border-bottom: solid 1px #baeaff;
+}
+
+.nav-shadow {
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+}
