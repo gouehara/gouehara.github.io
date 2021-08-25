@@ -200,6 +200,7 @@ header .overlay {
   border-bottom: solid 1px #baeaff;
 }
 
-.nav-shadow {
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+.card-img-top {
+  height: 27vh;
+  object-fit: cover;
 }
