@@ -125,6 +125,7 @@ header .overlay {
 
 .browser-content {
   background-color: rgba(153, 236, 255, 0.7);
+  
 }
 
 @media (max-width: 500px) {
@@ -147,6 +148,17 @@ header .overlay {
 
 .portfolio-title {
   margin-bottom: 2rem;
+  position: relative;
+}
+
+.portfolio-title::after{
+  content:'';
+  height:2px;
+  width:6%;
+  background:#03d3fc;
+  position:absolute;
+  left:calc(50% - 3%);
+  bottom:-15px;
 }
 
 .overlay {
