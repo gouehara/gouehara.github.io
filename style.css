@@ -127,6 +127,12 @@ header .overlay {
   background-color: rgba(153, 236, 255, 0.7);
 }
 
+@media (max-width: 500px) {
+  .browser-content {
+
+  }
+}
+
 .portfolio-container {
   color: #777;
 }
