@@ -154,10 +154,10 @@ header .overlay {
 .portfolio-title::after{
   content:'';
   height:2px;
-  width:6%;
+  width:10%;
   background:#03d3fc;
   position:absolute;
-  left:calc(50% - 3%);
+  left:calc(50% - 5%);
   bottom:-15px;
 }
 
