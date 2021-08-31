@@ -89,7 +89,7 @@ header .overlay {
   border-top-right-radius: 4px;
 }
 
-/* Create three unequal columns that floats next to each other */
+/* Create three unequal columns that floats next to each other 
 .column {
   float: left;
 }
@@ -106,13 +106,13 @@ header .overlay {
   width: 75%;
 }
 
-/* Clear floats after the columns */
+/* Clear floats after the columns 
 .browser-row:after {
   content: "";
   display: table;
   clear: both;
 }
-
+*/
 /* Three dots */
 .dot {
   margin-top: 4px;
