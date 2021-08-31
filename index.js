@@ -3,6 +3,7 @@ const speed = 400;
 const txt = `  Hello world :-)`;
 const video = document.getElementById("myVideo");
 
+  
 const typeWriter = () => {
   if (i < txt.length) {
     document.getElementById("demo").innerHTML += txt.charAt(i);

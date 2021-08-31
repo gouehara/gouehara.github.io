@@ -59,7 +59,7 @@ header .overlay {
 
 .parallax {
   /* The image used */
-  background: url("asset/my-pic.jpg") top left/ cover no-repeat;
+  background: url("asset/my-pic.jpg") top center/ cover no-repeat;
 
   /* Full height */
   min-height: 550px;
@@ -72,9 +72,9 @@ header .overlay {
 
 .caption {
   position: absolute;
-  left: 15%;
-  top: 40%;
-  width: 70%;
+  left: 10%;
+  top: 38%;
+  width: 80%;
 }
 
 .browser-container {
