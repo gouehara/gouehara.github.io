@@ -125,12 +125,10 @@ header .overlay {
 
 .browser-content {
   background-color: rgba(153, 236, 255, 0.7);
-  
 }
 
 @media (max-width: 500px) {
   .browser-content {
-
   }
 }
 
@@ -151,14 +149,14 @@ header .overlay {
   position: relative;
 }
 
-.portfolio-title::after{
-  content:'';
-  height:1px;
-  width:16%;
-  background:#03d3fc;
-  position:absolute;
-  left:calc(50% - 8%);
-  bottom:-15px;
+.portfolio-title::after {
+  content: "";
+  height: 1px;
+  width: 16%;
+  background: #03d3fc;
+  position: absolute;
+  left: calc(50% - 8%);
+  bottom: -15px;
 }
 
 .overlay {
@@ -180,11 +178,15 @@ header .overlay {
   position: absolute;
   width: 200px;
   left: 50%;
-  top: 50%;
+  top: 36%;
   transform: translate(-50%, -50%);
   text-align: center;
   opacity: 0;
   transition: opacity 0.35s ease;
+}
+
+.button-b {
+  top: 70%;
 }
 
 .button a {
