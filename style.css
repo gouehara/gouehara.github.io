@@ -178,16 +178,13 @@ header .overlay {
   position: absolute;
   width: 200px;
   left: 50%;
-  top: 32%;
+  top: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   opacity: 0;
   transition: opacity 0.35s ease;
 }
 
-.button.button-b {
-  top: 68%;
-}
 
 .button a {
   width: 200px;
