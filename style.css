@@ -48,8 +48,7 @@ header .overlay {
 
 @media (pointer: coarse) and (hover: none) {
   header {
-    background: url("asset/hello_world.mp4") white no-repeat center center
-      scroll;
+    background: url("asset/Artist.mp4") white no-repeat center center scroll;
   }
 
   header video {
